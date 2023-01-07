@@ -29,7 +29,7 @@ while True:
                 for i in range(len(word)):
                     if word[i] == guess:
                         curr[i] = guess
-            else:
+            elif guess not in word and guess not in wrong_letters:
                 wrong_letters += guess
                 tries += 1
             
